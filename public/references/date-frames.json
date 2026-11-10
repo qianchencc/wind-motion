@@ -1,0 +1,18 @@
+{
+  "fps": 30,
+  "firstVideoFrame": 51,
+  "lastVideoFrame": 160,
+  "frameCount": 110,
+  "tileWidth": 700,
+  "tileHeight": 88,
+  "columns": 10,
+  "rows": 11,
+  "crop": {
+    "x": 300,
+    "y": 328,
+    "width": 700,
+    "height": 88
+  },
+  "source": "User-provided date detail screen recording, decoded without changing frame rate; only the date area is included.",
+  "timing": "Local frame 0 = uploaded recording frame 51 (1.7 s). After local frame 109, hold the final reference until the six-second loop restarts."
+}
