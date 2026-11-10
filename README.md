@@ -85,3 +85,11 @@ The authoritative Site identity is in `.openai/hosting.json`.
 - Date inspector visually checked at F64, F95 and F108, including partially transparent blue, blue/white mixture and the final digit's first white appearance. Frame stepping, playback synchronization, restart during playback, parameter restoration and date-only PNG export checked through the actual browser UI.
 
 The temporary responsive QA route is not part of the delivered Site.
+
+## GitHub Pages
+
+**Browser demo:** https://qianchencc.github.io/wind-motion/
+
+The visual motion studies are statically exported from the Next.js client. Original reference images and in-browser effect controls remain local to the viewer.
+
+Deployment is automated by [the Pages workflow](.github/workflows/pages.yml) on changes to `main`. First-time setup: select **GitHub Actions** in [Settings → Pages](https://github.com/qianchencc/wind-motion/settings/pages), then rerun the workflow. GitHub Pages deployment is independent of any server-only features.
