@@ -68,6 +68,8 @@ jobs:
                   updated = original
                   for before, after in substitutions:
                       updated = updated.replace(before, after)
+                  # Source-file imports must remain repository-relative, not URL-prefixed.
+                  updated = updated.replace('@/public/wind-motion/references/', '@/public/references/')
                   if updated != original:
                       file.write_text(updated, encoding='utf-8')
           PY
