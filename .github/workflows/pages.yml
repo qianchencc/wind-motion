@@ -67,10 +67,7 @@ jobs:
                   original = file.read_text(encoding='utf-8')
                   updated = original
                   for before, after in substitutions:
-                      if before == '/favicon.svg':
-                          updated = updated.replace('"' + before + '"', '"' + after + '"')
-                      else:
-                          updated = updated.replace('"' + before, '"' + after).replace("'" + before, "'" + after)
+                      updated = updated.replace(before, after)
                   if updated != original:
                       file.write_text(updated, encoding='utf-8')
           PY
